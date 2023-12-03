@@ -108,7 +108,7 @@ class QADataGenerator:
             api_key=model_config["api_key"] if "api_key" in model_config else os.getenv("OPENAI_API_KEY"),
 
             # AOAI model params
-            deployment_id=model_config["deployment"],
+            deployment_id=model_config["deployment_id"],
             model=model_config["model"],
             max_tokens=model_config.get("max_tokens", 2000),
             temperature=0.0,  # don't need creativity
